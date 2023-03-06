@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root 
+{
+  --family:'Nunito', sans-serif;
+}
+* 
+{
+   -webkit-transition: all .3s ease-out;
+   -moz-transition:  all .3s ease-out;
+   -ms-transition: all .3s ease-out;
+   -o-transition:  all .3s ease-out;
+   transition: all .3s ease-out;
+}
+
+body
+{
+  font-size:17px;
+  color: #666;
+  text-align:justify;
+  font-family: var(--family);
+  background: rgb(0,159,231);
+background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+  background-repeat:no-repeat;
+  background-size: 100% 600%;
+  min-height: 100%;
+}
+
+section 
+{
+  padding-top:25vw;
+}
+
+section::before
+{
+ content: url("https://www.freeconvert.com/jpg-to-svg");
+  opacity:0.6;
+  position:absolute;
+  left: 60%;
+  width: 40vw;
+}
+
+.card 
+{
+  background: rgba(255,255,255,0.4);
+   border-radius: 10px;
+   border: 1px solid rgba(255,255,255,0.4);
+    position:relative;
+  color:white;
+  z-index:1;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-pic 
+{
+  width:12rem;
+background-blend-mode: hard-light; 
+  margin:-20vw auto;
+}
+
+@media(min-width:991px)
+{
+  section 
+  {
+    padding-top:15vw;
+  }
+  section::before 
+  {
+     left: 50%;
+      width: 30vw;
+  }
+  .card-pic 
+  {
+   position:absolute;
+    left:-6vw;
+    top:-5vw;
+    margin:0; 
+  }
+}
+
+h5
+{
+  font-size:1.8rem;
+  font-weight:bold;
+}
+
+h5::after 
+{
+ font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f004";
+  color:#7b1bd5;
+}
+
+.line 
+{
+  width:100%;
+  height:4px;
+  background-color:#5CF5CB;
+  opacity:0.7;
+  margin-bottom:10px;
+}
+
+i
+{
+  position:absolute;
+  right:-2vw;
+  bottom:-4vw;
+  z-index:2;
+  color:white;
+	font-size:3rem;
+  background: rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+	padding: 1rem;
+	border-radius: 10px;
+	transition: all .6s ease-in-out;
+   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+@-webkit-keyframes SlowFloat {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+.slowfloat2s {
+    -webkit-animation: SlowFloat 2s infinite  alternate;
+    animation: SlowFloat 2s infinite  alternate;
+}
+
+.slowfloat3s {
+    -webkit-animation: SlowFloat 3s infinite  alternate;
+    animation: SlowFloat 3s infinite  alternate;
+}
